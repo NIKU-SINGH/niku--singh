@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      'OpenSans' : ['OpenSans','sans-serif', 'sans-serif'],
+    }
   },
   plugins: [],
 }

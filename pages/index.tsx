@@ -1,17 +1,19 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import Hero from '../components/Hero'
+import Hero from '../components/Hero/index'
+import Navbar from '../components/Navbar/index'
 
 const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <div>
       <Head>
         <title>Niku Singh</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main className='font-OpenSans'>
+          <Navbar />
           <Hero />
       </main>
         
