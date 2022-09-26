@@ -7,15 +7,15 @@ function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <nav className="fixed w-full top-0 z-10 shadow bg-white rounded-sm">
+      <nav className="fixed w-full top-0 z-10 shadow bg-transparent rounded-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             <div className="flex-shrink-0 ">
-              <div className="hidden md:block font-medium text-3xl bg-clip-text">
-                Niku Singh
+              <div className="hidden md:block font-semibold text-3xl">
+                Niku.Singh
               </div>
-              <div className="md:hidden font-medium text-3xl text-transparent bg-clip-text">
-                Niku Singh
+              <div className="md:hidden font-semibold text-3xl">
+                Niku.Singh
               </div>
             </div>
             <div className="font-medium text-gray-700">
