@@ -7,7 +7,9 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      'OpenSans' : ['OpenSans','sans-serif', 'sans-serif'],
+      "Poppins" : ['Poppins'],
+      "Pacifico": ['Pacifico'],
+      "ProductSans" : ['PT Sans'],
     }
   },
   plugins: [],

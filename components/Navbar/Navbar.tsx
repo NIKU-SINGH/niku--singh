@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import Image from 'next/image'
 import Link from 'next/link'
+import { FiSun, FiMoon } from 'react-icons/fi';
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,16 +12,16 @@ function Nav() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             <div className="flex-shrink-0 ">
-              <div className="hidden md:block font-semibold text-3xl">
-                Niku.Singh
+              <div className="hidden md:block text-xl md:text-3xl font-Pacifico font-normal" >
+                Niku Singh.
               </div>
-              <div className="md:hidden font-semibold text-3xl">
-                Niku.Singh
+              <div className="md:hidden font-Pacifico font-normal text-xl md:text-3xl">
+                Niku Singh.
               </div>
             </div>
             <div className="font-medium text-gray-700">
 
-              <div className="hidden md:block">
+              <div className="hidden md:block font-Poppins">
                 <div className="ml-10 flex items-baseline space-x-12">
                   <Link
                     href="about"
@@ -53,8 +54,11 @@ function Nav() {
               </div>
             </div>
 
-            <div>
-              <h1>Icon</h1>
+            <div
+              className=" hidden md:block text-2xl border rounded-full border-black p-2"
+            >
+              <FiSun />
+              {/* <FiMoon /> */}
             </div>
             <div className="-mr-2 flex md:hidden">
               <button
@@ -67,7 +71,7 @@ function Nav() {
                 <span className="sr-only">Open main menu</span>
                 {!isOpen ? (
                   <svg
-                    className="block h-6 w-6"
+                    className="block h-8 w-8 border-gray-900 border-solid border rounded-full p-1"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -83,7 +87,7 @@ function Nav() {
                   </svg>
                 ) : (
                   <svg
-                    className="block h-6 w-6"
+                    className="block h-8 w-8 border-gray-900 border-solid border rounded-full p-1"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -140,6 +144,20 @@ function Nav() {
                     Contact us
                   </Link>
                 </div>
+                <div className=" text-black px-3 py-2 rounded-md text-base font-medium flex justify-center items-center">
+                  <Link href="contact">
+                    <button className="btn btn-gray-800 rounded-full border-2 p-1 pl-2 pr-2 flex items-center">
+                      Change the theme
+                      <div
+                        className="text-sm border rounded-full border-black p-2 ml-4"
+                      >
+                        <FiSun />
+                        {/* <FiMoon /> */}
+                      </div>
+                    </button>
+                  </Link>
+                </div>
+
               </div>
             </div>
           )}
