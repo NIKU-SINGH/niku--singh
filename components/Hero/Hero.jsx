@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { BsGithub, BsTwitter, BsLinkedin, BsStackOverflow } from 'react-icons/Bs'
-import { AiFillGithub, AiFillTwitterCircle, AiFillLinkedin } from 'react-icons/Ai'
+import { AiFillGithub, AiFillTwitterCircle, AiFillLinkedin } from 'react-icons/ai'
 
 function Hero() {
     return (
@@ -27,10 +27,9 @@ function Hero() {
                     <AiFillTwitterCircle className='h-8 w-8' />
                 </div>
                 <div>
-                    <Image src="/hero.svg" height="400px" width="900px" />
+                    <Image src="/hero.svg" height="400px" width="900px" className='relative' />
                     <div>
-                    <Image src="/images/rocket.png" height="380px" width="300px" />
-
+                        <Image src="/images/rocket.png" height="380px" width="300px" className='absolute' />
                     </div>
                 </div>
             </div>
