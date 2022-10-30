@@ -10,7 +10,10 @@ module.exports = {
       "Poppins" : ['Poppins'],
       "Pacifico": ['Pacifico'],
       "ProductSans" : ['PT Sans'],
-    }
+      "OpenSans": ['Open Sans'],
+    },
+    darkMode: 'class',
+
   },
   plugins: [],
 }

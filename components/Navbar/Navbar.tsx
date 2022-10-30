@@ -6,6 +6,19 @@ import { FiSun, FiMoon } from 'react-icons/fi';
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
+  const [theme,setTheme] = useState('NULL');
+
+  const toggleTheme = () => {
+    if(theme == 'light'){
+      localStorage.setItem("color-theme","dark");
+      setTheme('dark');
+    } 
+    else{
+      localStorage.setItem("color-theme","light");
+      setTheme('light');
+    } 
+  }
+
   return (
     <div>
       <nav className="fixed w-full top-0 z-10 shadow bg-white rounded-sm">
@@ -55,10 +68,12 @@ function Nav() {
             </div>
 
             <div
-              className=" hidden md:block text-2xl border rounded-full border-black p-2"
+              className=" hidden md:block text-2xl border rounded-full border-black p-2 cursor-pointer"
+              onClick={() => toggleTheme()}
             >
-              <FiSun />
-              {/* <FiMoon /> */}
+              {
+                ( theme == 'light') ? <FiSun /> :<FiMoon />
+              }
             </div>
             <div className="-mr-2 flex md:hidden">
               <button
