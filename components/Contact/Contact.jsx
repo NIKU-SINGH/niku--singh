@@ -4,7 +4,7 @@ import Image from 'next/image'
 function Contact() {
     return (
         <div className='flex items-center justify-center flex-col'>
-            <div className='h-[90vh] w-full bg-black flex justify-center relative'>
+            <div className='h-[50vh] w-full bg-gray-900 flex justify-center relative'>
                 <div className='w-[85vw] md:h-[50vh] h-[40vh] rounded-3xl absolute md:-top-64 -top-48 flex items-center justify-center'>
                     <Image src="/images/contact.png" layout='fill' className='object-full rounded-3xl' />
                     <div className='absolute h-[20vh] w-[90%] flex flex-col items-center justify-center'>
@@ -14,6 +14,8 @@ function Contact() {
                     </div>
                 </div>
             </div>
+                <hr />
+                <h1 className='bg-gray-900 text-center text-white w-full p-2'>© 2023 Niku Singh</h1>
         </div>
     )
 }

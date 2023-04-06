@@ -18,26 +18,26 @@ function Hero() {
                     </p>
                 </div>
                 <button className="bg-black hover:bg-gray-800 text-white text-xs md:text-sm font-normal py-2 px-6 rounded-full h-10 w-36 md:h-12 md:w-40 mb-4">
-                    <Link href="https://drive.google.com/file/d/1Wy6MWpNepaELxuH8fttCPCYu_D3CrMbW/view?usp=sharing">
+                    <Link href="https://docs.google.com/document/d/1lnxx-nLlG9aZvqdkCtpoxdqhELRuTh5FQ_C_aIpS2cE/edit?usp=sharing">
                         Resume
                     </Link>
                 </button>
                 <div className='flex justify-evenly mb-4 w-32 md:w-60'>
                     <Link href="https://github.com/NIKU-SINGH">
-                        <FaGithub className=' h-6 w-6 md:h-10 md:w-10 cursor-pointer ' />
+                        <FaGithub className=' h-6 w-6 md:h-10 md:w-10 cursor-pointer hover:text-gray-600' />
                     </Link>
-                    <div className='h-6 w-6 md:h-10 md:w-10 bg-black rounded-full flex justify-center items-center text-white cursor-pointer'>
+                    <div className='h-6 w-6 md:h-10 md:w-10 bg-black  hover:bg-gray-600 rounded-full flex justify-center items-center text-white cursor-pointer'>
                         <Link href="https://twitter.com/Niku_Singh_">
                             <FaTwitter className='h-4 w-4 md:h-5 md:w-5' />
                         </Link>
                     </div>
-                    <div className='h-6 w-6 md:h-10 md:w-10 bg-black rounded-full flex justify-center items-center text-white cursor-pointer'>
+                    <div className='h-6 w-6 md:h-10 md:w-10 bg-black hover:bg-gray-600 rounded-full flex justify-center items-center text-white cursor-pointer'>
                         <Link href="https://www.linkedin.com/in/niku-singh/">
                             <FaLinkedinIn className='h-4 w-4 md:h-5 md:w-5' />
                         </Link>
                     </div>
-                    <div className='h-6 w-6 md:h-10 md:w-10 bg-black rounded-full flex justify-center items-center text-white cursor-pointer'>
-                        <Link href="https://github.com/NIKU-SINGH">
+                    <div className='h-6 w-6 md:h-10 md:w-10 bg-black hover:bg-gray-600 rounded-full flex justify-center items-center text-white cursor-pointer'>
+                        <Link href="https://stackoverflow.com/users/20343109/niku-singh?tab=profile">
                         <FaStackOverflow className='h-4 w-4 md:h-5 md:w-5' />
                         </Link>
                     </div>

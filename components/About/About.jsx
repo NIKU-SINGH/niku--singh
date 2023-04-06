@@ -1,10 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
+import Timeline from './Timeline'
+import Time from './Time'
+
 function About() {
     return (
         <>
             <div className='flex flex-col items-center justify-center m-14'>
-                <h1 className='text-5xl font-Poppins font-bold mb-8'>About Me</h1>
+                <h1 className='text-4xl font-ProductSans font-bold w-[90vw]'>About Me</h1>
                 <div className='flex flex-col-reverse justify-center items-center lg:flex-row m-4'>
                     <div className='p-4 w-[100vw]] lg:w-[85%] font-Poppinsh-[50vh]'>
                         <div className='flex mb-4'>
@@ -32,9 +35,14 @@ function About() {
                         <Image src="/profile.svg" layout='fill' className='object-contain' />
                     </div>
                 </div>
-                {/* <h1 className='text-5xl md:text-4xl font-OpenSans font-bold mb-8'>Education</h1>
-                <h1 className='text-5xl md:text-4xl font-OpenSans font-bold mb-8'>Skills</h1>
-                <h1 className='text-5xl md:text-4xl font-OpenSans font-bold mb-8'>Interest</h1> */}
+                    <h1 className='text-4xl font-OpenSans font-bold mb-8 w-[70vw]'>Education</h1>
+                <div className=' w-[70vw]'>
+                    {/* <Time /> */}
+                    <Timeline />
+                </div>
+
+                <h1 className='text-5xl font-OpenSans font-bold mb-8'>Skills</h1>
+                <h1 className='text-5xl font-OpenSans font-bold mb-8'>Interest</h1>
 
             </div>
         </>
