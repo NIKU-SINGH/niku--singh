@@ -3,6 +3,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Hero from '../components/Hero/Hero'
 import Navbar from '../components/Navbar/index'
+import About from '../components/About/index'
+import Contact from '../components/Contact/Contact'
 
 const Home: NextPage = () => {
   return (
@@ -12,11 +14,15 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='font-OpenSans'>
-          <Navbar />
-          <Hero />
+      <main className='dark'>
+        <Navbar />
+        <Hero />
+        <About />
+        {/* <div className='bottom-0'> */}
+          <Contact />
+        {/* </div> */}
       </main>
-        
+
     </div>
   )
 }

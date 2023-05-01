@@ -1,14 +1,37 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { Transition } from "@headlessui/react";
 import Image from 'next/image'
 import Link from 'next/link'
 import { FiSun, FiMoon } from 'react-icons/fi';
+import { useTheme } from 'next-themes'
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
+  const { theme, setTheme } = useTheme()
+  const { resolvedTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+  // useEffect only runs on the client, so now we can safely show the UI
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) {
+    return null
+  }
+
+  const toggleTheme  = ()=> {
+     if(resolvedTheme ==='dark')
+      setTheme("light")
+    else
+      setTheme('dark')
+  
+  }
+   
+
+
   return (
     <div>
-      <nav className="fixed w-full top-0 z-10 shadow bg-white rounded-sm">
+      <nav className="fixed w-full top-0 z-10 shadow rounded-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             <div className="flex-shrink-0 ">
@@ -55,10 +78,13 @@ function Nav() {
             </div>
 
             <div
-              className=" hidden md:block text-2xl border rounded-full border-black p-2"
+              className=" hidden md:block text-2xl border rounded-full border-black p-2 cursor-pointer"
+              // onClick={() => setTheme({ color: resolvedTheme === 'dark'} ? 'light' : 'dark')}
+              onClick={toggleTheme}
             >
-              <FiSun />
-              {/* <FiMoon /> */}
+              {
+                (theme == 'light') ? <FiSun /> : <FiMoon />
+              }
             </div>
             <div className="-mr-2 flex md:hidden">
               <button
