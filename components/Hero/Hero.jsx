@@ -14,7 +14,7 @@ function Hero() {
                 <h1 className='text-3xl md:text-6xl font-semibold  text-gray-600 mb-4 '>I Build Things for the Web.</h1>
                 <div className='flex items-center text-center w-[80%] xs:w-[70%] lg:w-[60%] mb-4'>
                     <p className='text-sm md:text-lg'>
-                        I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at Upstatement.
+                        I’m a FullStack developer from India, currently Pursuing my BTech. I am an OSS contributor
                     </p>
                 </div>
                 <button className="bg-black hover:bg-gray-800 text-white text-xs md:text-sm font-normal py-2 px-6 rounded-full h-10 w-36 md:h-12 md:w-40 mb-4">

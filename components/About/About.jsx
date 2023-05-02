@@ -6,8 +6,8 @@ import Time from './Time'
 function About() {
     return (
         <>
-            <div className='flex flex-col items-center justify-center m-14'>
-                <h1 className='text-4xl font-ProductSans font-bold w-[90vw]'>About Me</h1>
+            <div className='flex flex-col font-Poppins items-center justify-center mt-48 mx-32'>
+                <h1 className='text-5xl font-ProductSans text-center font-bold w-[90vw]'>About Me</h1>
                 <div className='flex flex-col-reverse justify-center items-center lg:flex-row m-4'>
                     <div className='p-4 w-[100vw]] lg:w-[85%] font-Poppinsh-[50vh]'>
                         <div className='flex mb-4'>
@@ -35,14 +35,14 @@ function About() {
                         <Image src="/profile.svg" layout='fill' className='object-contain' />
                     </div>
                 </div>
-                    <h1 className='text-4xl font-OpenSans font-bold mb-8 w-[70vw]'>Education</h1>
+                    <h1 className='text-4xl font-Poppins text-center font-bold mt-20'>Education</h1>
                 <div className=' w-[70vw]'>
                     {/* <Time /> */}
                     <Timeline />
                 </div>
 
-                <h1 className='text-5xl font-OpenSans font-bold mb-8'>Skills</h1>
-                <h1 className='text-5xl font-OpenSans font-bold mb-8'>Interest</h1>
+                <h1 className='text-4xl  font-bold mb-8'>Skills</h1>
+                <h1 className='text-4xl  font-bold mb-8'>Interest</h1>
 
             </div>
         </>
