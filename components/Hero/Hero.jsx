@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { FaLinkedinIn, FaTwitter, FaGithub, FaStackOverflow } from 'react-icons/fa';
+import {FiGithub} from 'react-icons/fi';
 import Link from 'next/link';
 
 function Hero() {
@@ -14,7 +15,7 @@ function Hero() {
                 <h1 className='text-3xl md:text-6xl font-semibold  text-gray-600 mb-4 '>I Build Things for the Web.</h1>
                 <div className='flex items-center text-center w-[80%] xs:w-[70%] lg:w-[60%] mb-4'>
                     <p className='text-sm md:text-lg'>
-                        I’m a FullStack developer from India, currently Pursuing my BTech. I am an OSS contributor
+                        I’m a FullStack developer from India, currently Pursuing my BTech, OSS contributor, Bitcoin & Blockchain enthusiasticall
                     </p>
                 </div>
                 <button className="bg-black hover:bg-gray-800 text-white text-xs md:text-sm font-normal py-2 px-6 rounded-full h-10 w-36 md:h-12 md:w-40 mb-4">
@@ -24,7 +25,7 @@ function Hero() {
                 </button>
                 <div className='flex justify-evenly mb-4 w-32 md:w-60'>
                     <Link href="https://github.com/NIKU-SINGH">
-                        <FaGithub className=' h-6 w-6 md:h-10 md:w-10 cursor-pointer hover:text-gray-600' />
+                        <FaGithub className=' h-6 w-6 md:h-10 dark:text-black bg-white rounded-full md:w-10 cursor-pointer hover:text-gray-600' />
                     </Link>
                     <div className='h-6 w-6 md:h-10 md:w-10 bg-black  hover:bg-gray-600 rounded-full flex justify-center items-center text-white cursor-pointer'>
                         <Link href="https://twitter.com/Niku_Singh_">
