@@ -5,6 +5,7 @@ import Hero from '../components/Hero/Hero'
 import Navbar from '../components/Navbar/index'
 import About from '../components/About/index'
 import Contact from '../components/Contact/Contact'
+import Skill from '../components/Skills'
 
 const Home: NextPage = () => {
   return (
@@ -14,10 +15,11 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='dark'>
+      <main className='dark dark:bg-slate-'>
         <Navbar />
         <Hero />
         <About />
+
         {/* <div className='bottom-0'> */}
           <Contact />
         {/* </div> */}
