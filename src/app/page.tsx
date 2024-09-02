@@ -1,13 +1,19 @@
 import Image from "next/image";
 import Preloader from "./components/preLoader";
+import Landing from "./components/hero";
+import Navbar from "./components/navbar";
 
 export default function Home() {
   return (
     <main className="">
-      <Preloader />
-      <h1 className="font-sanFrancisco font-bold text-8xl">
-        This is Niku Singh
-      </h1>
+      {/* <Preloader /> */}
+
+      {/* Main Section layout */}
+      <div className="flex h-[100vh]">
+        <Navbar />
+        <Landing />
+        <Navbar />
+      </div>
     </main>
   );
 }
