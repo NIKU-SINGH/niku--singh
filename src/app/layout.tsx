@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Portfolio of Niku Singh, a Fullstack Developer specializing in web development, OSS contributions, and open-source projects.",
   keywords:
     "Niku Singh, Fullstack Developer, Web Developer, Open Source, GitLab, GitButler, Parade DB, Postgres, GSoC, Linux Foundation, MIT Bitcoin Expo",
-  author: "Niku Singh",
+//   author: "Niku Singh",
   viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
   openGraph: {
