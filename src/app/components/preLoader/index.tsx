@@ -8,7 +8,6 @@ const Preloader = () => {
 
   useEffect(() => {
     const preloader = document.getElementById("preloader");
-
     // Animate the number count
     gsap.to(
       {},

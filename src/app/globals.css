@@ -2,24 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  /* --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255; */
-  /* padding: 16px; */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-}
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
-
 #preloader {
   position: fixed;
   top: 0;
@@ -43,12 +25,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: black;
 }
 
 @layer utilities {
@@ -99,9 +76,24 @@ body {
   src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
 }
 
-* {
-  font-family: "San Francisco";
+/* Monumnt text extended font */
+/* Regular */
+@font-face {
+  font-family: "Monument Extended";
+  font-weight: 400;
+  src: url("../../public/fonts/monumentextended/MonumentExtended-Regular.otf");
 }
+
+/* ExtraBold */
+@font-face {
+  font-family: "Monument Extended";
+  font-weight: 900;
+  src: url("../../public/fonts/monumentextended/MonumentExtended-Ultrabold.otf");
+}
+
+/* * {
+  font-family: "Monument Extended";
+} */
 
 h1 {
   font-weight: 700;
