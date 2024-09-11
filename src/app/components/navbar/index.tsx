@@ -1,27 +1,36 @@
 import React from "react";
-import { FaHome, FaInfoCircle, FaUsers, FaCog, FaUserCircle } from "react-icons/fa"; // Import icons from react-icons
+import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <div className=" w-24 h-full bg-gray-800 text-white flex flex-col items-center py-4 space-y-4">
-      <div className="flex flex-col items-center space-y-4">
-        <div className="w-12 h-12 flex items-center justify-center hover:bg-gray-700 rounded-full transition duration-300">
-          <FaHome size={24} />
-        </div>
-        <div className="w-12 h-12 flex items-center justify-center hover:bg-gray-700 rounded-full transition duration-300">
-          <FaInfoCircle size={24} />
-        </div>
-        <div className="w-12 h-12 flex items-center justify-center hover:bg-gray-700 rounded-full transition duration-300">
-          <FaUsers size={24} />
-        </div>
-        <div className="w-12 h-12 flex items-center justify-center hover:bg-gray-700 rounded-full transition duration-300">
-          <FaCog size={24} />
-        </div>
+    <div className=" w-full py-2 px-16 flex items-center justify-between sticky top-0">
+      {/* Logo or Name */}
+      <div className="w-20 h-20 flex items-center justify-center">
+        {/* <img src="/images/logo.svg" alt="Logo" /> */}
+        <Image src="/images/logo.svg" width={50} height={50} alt="Logo" />
       </div>
-      <div className="mt-auto w-12 h-12 flex items-center justify-center hover:bg-gray-700 rounded-full transition duration-300">
-        {/* You can add a user avatar or other icon here */}
-        <FaUserCircle size={24} />
-      </div>
+
+      {/* Navigation Items */}
+      <nav className="p-5 rounded-2xl px-10 bg-foreground backdrop-blur-md shadow-lg border-1 border-whiteGradient">
+        <ul className="flex space-x-8 text-white text-sm font-normal">
+          <li className="cursor-pointer hover:text-gray-300 hover:font-bold">
+            About
+          </li>
+          <li className="cursor-pointer hover:text-gray-300 hover:font-bold">
+            Experience
+          </li>
+          <li className="cursor-pointer hover:text-gray-300 hover:font-bold">
+            Projects
+          </li>
+          <li className="cursor-pointer hover:text-gray-300 hover:font-bold">
+            Contact
+          </li>
+          <li className="cursor-pointer hover:text-gray-300 hover:font-bold">
+            Blog
+          </li>
+        </ul>
+      </nav>
+      <nav>{/* <p>Random button</p> */}</nav>
     </div>
   );
 };
