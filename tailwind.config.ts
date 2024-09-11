@@ -9,6 +9,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        whiteGradient: "var(--white-gradient-lg)",
+        foreground: "var(--foreground)",
+      },
       textStrokeWidth: {
         "1": "1px",
         "2": "2px",

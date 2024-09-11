@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --white-gradient-sm: rgba(250, 250, 250, 0.1);
+  --white-gradient-md: rgba(250, 250, 250, 0.15);
+  --white-gradient-lg: rgba(250, 250, 250, 0.2);
+  --foreground: #0a0b0b;
+}
+
 #preloader {
   position: fixed;
   top: 0;

@@ -10,8 +10,8 @@ export default function Home() {
       {/* <Preloader /> */}
 
       {/* Main Section layout */}
-      <div className="flex flex-col">
-        {/* <Navbar /> */}
+      <Navbar />
+      <div className="flex flex-col py-6 px-24">
         <Landing />
         <About />
       </div>
