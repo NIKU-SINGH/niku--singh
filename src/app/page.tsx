@@ -1,19 +1,25 @@
+"use client";
+
 import Image from "next/image";
 import Preloader from "./components/preLoader";
 import Landing from "./components/hero";
 import Navbar from "./components/navbar";
+import About from "./components/about";
+import { useState } from "react";
 
 export default function Home() {
+  const [isLoading, setIsLoading] = useState(true);
   return (
     <main className="">
-      {/* <Preloader /> */}
-
-      {/* Main Section layout */}
-      <div className="flex h-[100vh]">
-        <Navbar />
-        <Landing />
-        <Navbar />
-      </div>
+      {isLoading ? (
+        <Preloader isLoading={isLoading} setIsLoading={setIsLoading} />
+      ) : (
+        <div>
+          <Navbar />
+          <Landing />
+          <About />
+        </div>
+      )}
     </main>
   );
 }
