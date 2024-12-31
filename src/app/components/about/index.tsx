@@ -4,7 +4,7 @@ import Image from "next/image";
 function About() {
   return (
     <div className="flex flex-col font-monumentExtended space-y-4 w-full bg-yellow-400 px-20  py-10 h-screen">
-      <h1 className="text-white text-4xl">About Me</h1>
+      <h1 className="text-white text-[4.2vw] font-normal">About Me</h1>
       <p className="text-white text-sm">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever

@@ -28,7 +28,9 @@ export default function Home() {
         </div>
       )} */}
       <div className="flex items-center justify-center flex-col">
-        <Logo />
+        {/* <Logo /> */}
+        <Navbar />
+
         <Hero2 />
         <About />
         <Work />

@@ -98,9 +98,48 @@ body {
   src: url("../../public/fonts/monumentextended/MonumentExtended-Ultrabold.otf");
 }
 
-/* * {
-  font-family: "Monument Extended";
-} */
+/* General Sans Bold */
+@font-face {
+  font-family: "General Sans";
+  font-weight: 700;
+  src: url("/fonts/generalSans/GeneralSans-Bold.otf") format("opentype");
+}
+
+/* General Sans Semi Bold */
+@font-face {
+  font-family: "General Sans";
+  font-weight: 600;
+  src: url("/fonts/generalSans/GeneralSans-SemiBold.otf") format("opentype");
+}
+
+/* General Sans Medium */
+@font-face {
+  font-family: "General Sans";
+  font-weight: 500;
+  src: url("/fonts/generalSans/GeneralSans-Medium.otf") format("opentype");
+}
+
+/* General Sans Regular */
+@font-face {
+  font-family: "General Sans";
+  font-weight: 400;
+  src: url("/fonts/generalSans/GeneralSans-Regular.otf") format("opentype");
+}
+
+/* General Sans Light */
+@font-face {
+  font-family: "General Sans";
+  font-weight: 300;
+  src: url("/fonts/generalSans/GeneralSans-Light.otf") format("opentype");
+}
+
+/* General Sans Extra Light */
+@font-face {
+  font-family: "General Sans";
+  font-weight: 200;
+  src: url("/fonts/generalSans/GeneralSans-ExtraLight.otf") format("opentype");
+}
+
 
 h1 {
   font-weight: 700;

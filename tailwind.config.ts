@@ -26,6 +26,7 @@ const config: Config = {
       fontFamily: {
         sanFrancisco: ["San Francisco", "sans-serif"],
         monumentExtended: ["Monument Extended", "sans-serif"],
+        generalSans: ["General Sans", "sans"],
       },
       fontWeight: {
         ultraLight: "100",
