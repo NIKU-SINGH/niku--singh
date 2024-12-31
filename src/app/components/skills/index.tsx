@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
 
-function About() {
+function Skills() {
   return (
-    <div className="flex flex-col font-monumentExtended space-y-4 w-full bg-yellow-400 px-20  py-10 h-screen">
-      <h1 className="text-white text-4xl">About Me</h1>
+    <div className="flex flex-col font-monumentExtended space-y-4 w-full bg-orange-500 px-20  py-10 h-screen">
+      <h1 className="text-white text-4xl">Skills</h1>
       <p className="text-white text-sm">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -20,4 +20,4 @@ function About() {
   );
 }
 
-export default About;
+export default Skills;

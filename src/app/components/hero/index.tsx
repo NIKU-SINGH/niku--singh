@@ -21,7 +21,7 @@ function Index() {
         {/* Text over the image */}
         <div className="flex items-center space-x-4 text-[8rem] relative z-10">
           <h1 className="font-bold font-monumentExtended text-white">NIKU</h1>
-          <h1 className="font-bold font-monumentExtended text-transparent text-stroke text-stroke-2 text-stroke-white">
+          <h1 className="font-bold font-monumentExtended text-transparent text-stroke-2 text-stroke-white">
             SINGH
           </h1>
         </div>
