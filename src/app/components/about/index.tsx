@@ -3,51 +3,20 @@ import Image from "next/image";
 
 function About() {
   return (
-    <div className="flex flex-col items-center justify-center m-14 font-monumentExtended space-y-4">
-      <h1 className="text-6xl font-monumentExtended font-bold w-full">
-        About Me
-      </h1>
-      <div className="flex flex-col justify-center lg:flex-row">
-        <div className="w-full lg:w-4/5">
-          <div className="flex mb-4">
-            <p className="text-sm font-regular">
-              Hello! My name is Brittany and I enjoy creating things that live
-              on the internet. My interest in web development started back in
-              2012 when I decided to try editing custom Tumblr themes — turns
-              out hacking together a custom reblog button taught me a lot about
-              HTML & CSS!
-            </p>
-          </div>
-          <div className="flex mb-4">
-            <p className="text-sm md:text-base">
-              Fast-forward to today, and I`&apos;`ve had the privilege of
-              working at an advertising agency, a start-up, a huge corporation,
-              and a student-led design studio. My main focus these days is
-              building accessible, inclusive products and digital experiences at
-              Statement for a variety of clients.
-            </p>
-          </div>
-          <div className="flex mb-4">
-            <p className="text-sm md:text-base">
-              I also recently launched a course that covers everything you need
-              to build a web app with the Spotify API using Node & React.
-            </p>
-          </div>
-          <div className="flex mb-4">
-            <p className="text-sm md:text-base">
-              Here are a few technologies I ve been working with recently:
-            </p>
-          </div>
-        </div>
-        <div className="h-[40vh] w-[60vw] md:h-[50vh] md:w-[40vw] sm:h-[40vh] sm:w-[50vw] relative">
-          <Image
-            src="/images/profile.svg"
-            layout="fill"
-            objectFit="contain"
-            alt="Profile"
-          />
-        </div>
-      </div>
+    <div className="flex flex-col font-monumentExtended space-y-4 w-full bg-yellow-400 px-20  py-10 h-screen">
+      <h1 className="text-white text-[4.2vw] font-normal">About Me</h1>
+      <p className="text-white text-sm">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+      </p>
+
     </div>
   );
 }

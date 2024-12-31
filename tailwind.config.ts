@@ -9,6 +9,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        whiteGradient: "var(--white-gradient-lg)",
+        foreground: "var(--foreground)",
+      },
       textStrokeWidth: {
         "1": "1px",
         "2": "2px",
@@ -22,6 +26,7 @@ const config: Config = {
       fontFamily: {
         sanFrancisco: ["San Francisco", "sans-serif"],
         monumentExtended: ["Monument Extended", "sans-serif"],
+        generalSans: ["General Sans", "sans"],
       },
       fontWeight: {
         ultraLight: "100",
